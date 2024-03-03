@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Items from "./Items";
-// Import ItemDetails from ".ItemsDetails";
+import ItemDetails from "./ItemsDetails";
 import ItemForm from "./ItemForm";
 
 
@@ -17,7 +17,7 @@ useEffect(() => {
   .then((data) => setItems(data.items));
 }, []);
 
-
+//console.log(data)
   return <div>
     <h1>Budgtr App</h1>
     {!toggleForm && (
