@@ -1,18 +1,18 @@
 import { useState, useEffect } from "react";
 import Items from "./Items";
-import ItemDetails from "./ItemsDetails";
+import ItemDetails from "./ItemDetails";
 import ItemForm from "./ItemForm";
 
 
 const App = () => {
  const [items, setItems] = useState([]);
 //this will toggle the item details component and send id
-const {toggleDetails, setToggleDetails} = useState({ show: false, id: null });
+const [toggleDetails, setToggleDetails] = useState({ show: false, id: null });
 const [toggleForm, setToggleForm] = useState(false);
 const [edit, setEdit] = useState({ show: false, id: null });
 
 useEffect(() => {
-  fetch("http:localhost3777/api/items")
+  fetch("http://localhost:3999/api/items")
   .then((res) => res.json())
   .then((data) => setItems(data.items));
 }, []);
