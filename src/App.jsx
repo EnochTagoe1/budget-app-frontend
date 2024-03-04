@@ -2,11 +2,12 @@ import { useState, useEffect } from "react";
 import Items from "./Items";
 import ItemDetails from "./ItemDetails";
 import ItemForm from "./ItemForm";
-import { Routes, Route, Link } from "react-router-dom"
+import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 
 const App = () => {
  const [items, setItems] = useState([]);
+ const [total, setTotal] = useState(0);
 //this will toggle the item details component and send id
 //const [toggleDetails, setToggleDetails] = useState({ show: false, id: null });
 //const [toggleForm, setToggleForm] = useState(false);
@@ -18,12 +19,20 @@ useEffect(() => {
   .then((data) => setItems(data.items));
 }, []);
 
+useEffect(() => {
+  const totalAmount = items
+  .map((item) => +item.amount)
+  .reduce((acc, curr) => acc + curr, 0);
+  setTotal(totalAmount)
+}, [items])
+ 
+
 //console.log(data)
   return <div>
     <header className="header">
-      <Link to={"/"}>
-    <h1> "BudgtR" App</h1>
-      </Link>
+      
+    <h1> <Link to={"/"}> "BudgtR" App</Link></h1>
+      
     </header>
     <Routes>
     <Route path="/" element={<Items
