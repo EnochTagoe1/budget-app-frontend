@@ -35,6 +35,10 @@ You have now connected your project to the repo.
 The purpose of this MVP app is to create a CRUD functional app for budget planning purposes. It is designed to be simple but effective tool that creates a great user experience.
 
 The app is designed with frontend and backend units to provide for a seamless and simple design for a great user experience:
+
+**Github Repos**
 `https://github.com/EnochTagoe1/budget-app-backend`
 `https://github.com/EnochTagoe1/budget-app-frontend`
 
+**Netlify Deployment**
+`https://rococo-gumption-009b11.netlify.app/`
