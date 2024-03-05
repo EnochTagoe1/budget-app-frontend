@@ -3,6 +3,12 @@
 
 .header {
     background-color: aquamarine;
-    
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
+body {
+   background-color: yellow;
+   padding: 20;
+   padding-bottom: 5; 
+}

@@ -1,5 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 30;
+  padding: 20;
   box-sizing: border-box;
+  grid-auto-rows: auto;
 }

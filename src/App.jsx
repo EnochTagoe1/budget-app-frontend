@@ -31,7 +31,7 @@ useEffect(() => {
   return <div>
     <header className="header">
       
-    <h1> <Link to={"/"}> "BudgtR" App</Link></h1>
+    <h1> <Link to={"/"}> Budget App</Link></h1>
       
     </header>
     <Routes>

@@ -1,4 +1,4 @@
-# Basic React Starter
+# Budget App
 
 You can use this starter to create any ReactJS app you would like.
 Unlike when you use `npm create vite@latest your-app-name -- --template react`,
@@ -29,3 +29,12 @@ If you would like to connect this afterwards to your personal Github then:
 You have now connected your project to the repo.
 
 **You have the ability to clone this repo over and over to create your own projects. Just remember to change the name of the folder so that you do not have duplicates**
+
+
+**PURPOSE:**
+The purpose of this MVP app is to create a CRUD functional app for budget planning purposes. It is designed to be simple but effective tool that creates a great user experience.
+
+The app is designed with frontend and backend units to provide for a seamless and simple design for a great user experience:
+`https://github.com/EnochTagoe1/budget-app-backend`
+`https://github.com/EnochTagoe1/budget-app-frontend`
+
