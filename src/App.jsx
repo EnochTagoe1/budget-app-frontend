@@ -32,7 +32,7 @@ useEffect(() => {
     <header className="header">
       
     <h1> <Link to={"/"}> Budget App</Link></h1>
-      
+    <Link to="/new">Add Transaction Item</Link>
     </header>
     <Routes>
     <Route path="/" element={<Items
